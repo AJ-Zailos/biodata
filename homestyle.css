@@ -1,0 +1,186 @@
+header {
+    justify-content: center;
+    background-color: chartreuse;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 20px;
+}
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(57, 0, 95);
+}
+
+nav {
+    width: 100%;
+    padding: 0 20px;
+    background-color: rgb(14, 14, 14);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.judul {
+    padding-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.judul img {
+    height: 180px;
+    width: 180px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 40px;
+}
+
+
+nav ul li a {
+    padding: 0;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.one {
+    background-color: #ffffff;
+    margin: 40px;
+    border-radius: 3px;
+}
+
+.one h1 {
+    font-size: 40px
+}
+
+.onetwo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.one div {
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.one div h3 {
+    margin-top: 20px;
+}
+
+.two {
+    background-color: white;
+    margin: 40px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.two h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.two ul {
+    font-size: 28px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.three {
+    background-color: white;
+    margin: 40px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.three h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.three table {
+    font-size: 28px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: chartreuse;
+    height: 70px;
+    width: 100%;
+}
+
+.menuIcon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.f32 {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width: 1000px) {
+    .navi {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 140px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav ul li a {
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .navi.active {
+        display: flex;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+}
